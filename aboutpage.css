@@ -1252,3 +1252,113 @@ input {
   .qualification__button.qualification__active {
       color: var(--first-color);
   }
+
+  /*=============== SPECS ===============*/
+.specs__container {
+  position: relative;
+}
+
+.specs__content {
+  row-gap: 1.5rem;
+}
+
+.specs__data {
+  display: grid;
+  row-gap: .25rem;
+}
+
+.specs__icon {
+  font-size: 1.2rem;
+  color: var(--black-color);
+}
+
+.specs__title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.specs__subtitle {
+  font-size: var(--smaller-font-size);
+}
+
+.specs__data:nth-child(1), .specs__data:nth-child(5) {
+  margin-left: 1.5rem;
+}
+
+.specs__img {
+  width: 250px;
+  position: absolute;
+  top: 2rem;
+  right: -4rem;
+}
+
+/*========== SERVICES ==========*/
+.services__container{
+  row-gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.services__content{
+  text-align: center;
+}
+
+.services__img{
+  width: 64px;
+  height: 64px;
+  fill: var(--first-color);
+  margin-bottom: var(--mb-2);
+}
+
+.services__title{
+  font-size: var(--h3-font-size);
+  color: var(--title-color);
+  margin-bottom: var(--mb-1);
+}
+
+.services__description{
+  padding: 0 1.5rem;
+}
+
+/*========== CLASS CSS ==========*/
+.section{
+  padding: 4rem 0 2rem;
+}
+
+.section-title, .section-subtitle{
+  text-align: center;
+}
+
+.section-title{
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+  margin-bottom: var(--mb-3);
+}
+
+.section-subtitle{
+  display: block;
+  color: var(--first-color);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1);
+}
+
+/*========== LAYOUT ==========*/
+.bd-container{
+  max-width: 960px;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
+
+.bd-grid{
+  display: grid;
+  gap: 1.5rem;
+}
+
+.l-header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
+}
