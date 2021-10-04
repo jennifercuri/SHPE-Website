@@ -1253,6 +1253,13 @@ input {
       color: var(--first-color);
   }
 
+  @media screen and (min-width: 568px){
+  .qualification__sections {
+      display: grid;
+      grid-template-columns: 0.6fr;
+      justify-content: center;
+    }
+  }
   /*=============== SPECS ===============*/
 .specs__container {
   position: relative;
