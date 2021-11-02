@@ -1,87 +1,226 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="GetInvolved.css" />
-  </head>
-  <body>
-    <main>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="GetInvolved.css">
+
+        <title>Responsive Website Travel</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Society of Professional Hispanic Engineers</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link ">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="MeetEboard.html" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="MeetEboard.html" class="nav__link">Board</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="GetInvolved.html" class="nav__link active-link">Get Involved</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Dark mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
 
 <section class="services section" id="services">
         <div class="container">
           <div class="section-header">
-            <h3 class="title" data-title="What I Do">Services</h3>
             <p class="text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
-              vero?
+              We meet every Tuesday at 6:30pm (est)! Please check our group me for more information!
             </p>
           </div>
-
+          <div class="container">
+            <div class="section-header">
+          <h3> For Students at Rutgers</h3>
           <div class="cards">
             <div class="card-wrap">
-              <img
-                src="./img/shapes/points3.png"
-                class="points points1 points-sq"
-                alt=""
-              />
-              <div class="card" data-card="UI/UX">
+              <div class="card" data-card="COMMITTEE">
                 <div class="card-content z-index">
                   <img src="./img/design-icon.png" class="icon" alt="" />
-                  <h3 class="title-sm">Web Design</h3>
+                  <h3 class="title-sm">Join a Committee</h3>
                   <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                    est suscipit itaque?
+                    Joining a committee is a great way to stay involved with SHE and to build your leadership skills!
                   </p>
-                  <a href="#" class="btn small">Read more</a>
+                  <br>
+                  <a href="https://www.instagram.com/p/CUqW72ypvJG/" class="btn small">Read more</a>
                 </div>
               </div>
             </div>
+          </div>
+          </div>
 
-            <div class="card-wrap">
-              <div class="card" data-card="Code">
-                <div class="card-content z-index">
-                  <img src="./img/code-icon.png" class="icon" alt="" />
-                  <h3 class="title-sm">Web Development</h3>
-                  <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolores suscipit nobis dolore?
-                  </p>
-                  <a href="#" class="btn small">Read more</a>
-                </div>
+        <div class="container">
+          <div class="section-header">
+        <h3> For High School and Middle School Students </h3>
+        <div class="cards">
+          <div class="card-wrap">
+            <img
+              src="./img/shapes/points3.png"
+              class="points points1 points-sq"
+              alt=""
+            />
+            <div class="card" data-card="CIENCIAS">
+              <div class="card-content z-index">
+                <h3 class="title-sm">Dia de Ciencias</h3>
+                <p class="text">
+                  Dia de Ciencias is a series of events that are geared towards inspiring and engaging minorities to pursue a degree and career in STEM. The goal of this program is to increase awareness of STEM fields and careers and increase students' belief in their ability to enter and succeed in the STEM field. The activities, networking opportunities, and information session about SHPE, as well as the parent workshop are all in place to help make students and parents aware of the multitude of opportunities around them.
+                </p>
+                <br>
+                <p class="btn small">Please contact outreach@rushpe.org for more information</a>
               </div>
             </div>
+          </div>
 
-            <div class="card-wrap">
-              <img
-                src="./img/shapes/points3.png"
-                class="points points2 points-sq"
-                alt=""
-              />
-              <div class="card" data-card="App">
-                <div class="card-content z-index">
-                  <img src="./img/app-icon.png" class="icon" alt="" />
-                  <h3 class="title-sm">App Development</h3>
-                  <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatum hic veniam nihil.
-                  </p>
-                  <a href="#" class="btn small">Read more</a>
-                </div>
+          <div class="card-wrap">
+            <div class="card" data-card="SHHADOW">
+              <div class="card-content z-index">
+                <h3 class="title-sm">The Shadow Program</h3>
+                <p class="text">
+                  This is a two day FREE program for students in their sophomore through senior year of high school! Within the two days, this program will expose the many paths and opportunities within the world of engineering through workshops and immersive activities!
+                </p>
+                <p class="btn small">Please contact communityservice@rushpe.org for more information</a>
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="container">
+        <div class="section-header">
+          <h3> For Alumni </h3>
+          <div class="cards">
+            <div class="card-wrap">
+              <div class="card" data-card="ALUMNI">
+                <div class="card-content z-index">
+                  <h3 class="title-sm">Alumni Mentorship Program</h3>
+                  <p class="text">
+                  We created this program as an opportunity for you to get reinvolved with SHE by sharing your tips and experiences with an eager undergrad. The program starts out with a mixer in the second week of February and will continue with biweekly check-ins with your pairs, as well as a group check-in in March and April.are geared towards inspiring and engaging minorities to pursue a degree and career in STEM. The goal of this program is to increase awareness of STEM fields and careers and increase students' belief in their ability to enter and succeed in the STEM field. The activities, networking opportunities, and information session about SHPE, as well as the parent workshop are all in place to help make students and parents aware of the multitude of opportunities around them.
+                  </p>
+                  <br>
+                  <p class="btn small">Please contact secretary@rushpe.org for more information</a>
+                </div>
+              </div>
+            </div>
+          </div>
       </section>
+      <!--==================== FOOTER ====================-->
+      <footer class="footer section">
+          <div class="footer__container container grid">
+              <div class="footer__content grid">
+                  <div class="footer__data">
+                      <h3 class="footer__title">Society of Hispanic Professional Engineers</h3>
+                      <p class="footer__description">Paul Robenson Cultural Center <br> 600
+                          Bartholomew Rd <br> Piscataway, NJ 08854 <br> <br> email:rushpe@gmail.com
+                          <br><br> Hours:<br> Every Tuesday from 6:30pm - 8:00pm
+                      </p>
+                      <div>
+                          <a href="https://www.facebook.com/rutgers.she" target="_blank" class="footer__social">
+                              <i class="ri-facebook-box-fill"></i>
+                          </a>
+                          <a href="https://www.linkedin.com/groups/3859874/" target="_blank" class="footer__social">
+                              <i class="ri-linkedin-fill"></i>
+                          </a>
+                          <a href="https://www.instagram.com/shpe_ru/?hl=en" target="_blank" class="footer__social">
+                              <i class="ri-instagram-fill"></i>
+                          </a>
+
+                      </div>
+                  </div>
+
+                  <div class="footer__data">
+                      <h3 class="footer__subtitle"></h3>
+                      <ul>
+                          <li class="footer__item">
+                              <a href="" class="footer__link"></a>
+                          </li>
+                          <li class="footer__item">
+                              <a href="" class="footer__link"></a>
+                          </li>
+                          <li class="footer__item">
+                              <a href="" class="footer__link"></a>
+                          </li>
+                      </ul>
+                  </div>
+
+                  <div class="footer__data">
+                      <h3 class="footer__subtitle"></h3>
+                      <ul>
+                          <li class="footer__item">
+                              <a href="" class="footer__link"></a>
+                          </li>
+                          <li class="footer__item">
+                              <a href="" class="footer__link"></a>
+                          </li>
+                          <li class="footer__item">
+                              <a href="" class="footer__link"></a>
+                          </li>
+                      </ul>
+                  </div>
+
+                  <div class="footer__data">
+                      <h3 class="footer__subtitle"></h3>
+                      <ul>
+                          <li class="footer__item">
+                              <a href="" class="footer__link"></a>
+                          </li>
+                          <li class="footer__item">
+                              <a href="" class="footer__link"></a>
+                          </li>
+                          <li class="footer__item">
+                              <a href="" class="footer__link"></a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+
+              <div class="footer__rights">
+                  <p class="footer__copy">&#169; 2021 Bedimcode. All rigths reserved.</p>
+                  <div class="footer__terms">
+                      <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                      <a href="#" class="footer__terms-link">Privacy Policy</a>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+       <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+          <i class="ri-arrow-up-line scrollup__icon"></i>
+      </a>
+
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="./js/isotope.pkgd.min.js"></script>
